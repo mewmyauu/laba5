@@ -61,3 +61,21 @@
 //     Console.WriteLine("- problems ocen i pos");
 // }
 
+Console.Write("enter age: : ");
+
+int age = int.Parse(Console.ReadLine());
+string ageGroup = age >= 18 ? "soversh" : "nesoversh";
+
+Console.WriteLine($"ti {ageGroup}.");
+Console.Write("\ntemperatura (°C): ");
+
+double temp = double.Parse(Console.ReadLine());
+
+string weather = temp >= 20 ? "heat" : (temp >= 0 ? "holod" : "moroz");
+
+Console.WriteLine($"{weather} na ulitse");
+
+Console.Write("\nvvedi 4islo: ");
+int n = int.Parse(Console.ReadLine());
+string parity = n % 2 == 0 ? "4etnoe" : "ne4et";
+Console.WriteLine($"{n} - {parity}");
